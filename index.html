@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <section id='title-section'>
+            <h2>Password Generator</h2>
+        </section>
+        <section id='password-section'>
+            <h1 id='password'>P4$5W0rD!</h1>
+            <img id='copy-icon' src='images/icon-copy.svg'>
+        </section>
+        <section id='options-section'>
+            <div id='char-length-section'>
+                <h3>Character Length</h3>
+                <h1 id='charLength'>10</h1>
+            </div>
+            <div id='slider-section'>
+                <input id='slider-bottom' type='range' min='0' max='20' value='10' step='1'>
+                <input id='slider-top' type='range' min='0' max='20' value='10' step='1'oninput='charLength.innerText = this.value'>
+            </div>
+            <div id='checkbox-section'>
+                <input class='checkbox' id='uppercase-checkbox' type='checkbox' checked>
+                <label for='uppercase-checkbox'>Include Uppercase Letters</label>
+                <input class='checkbox' id='lowercase-checkbox' type='checkbox' checked>
+                <label for='lowercase-checkbox'>Include Lowercase Letters</label>
+                <input class='checkbox' id='numbers-checkbox' type='checkbox' checked>
+                <label for='numbers-checkbox'>Include Numbers</label>
+                <input class='checkbox' id='symbols-checkbox' type='checkbox' checked>
+                <label for='symbols-checkbox'>Include Symbols</label>
+            </div>
+            <div id='strength-section'>
+                <h3>STRENGTH</h3>
+                <h2 id='strength-text'>MEDIUM</h2>
+                <div class='strength-box' id='strength-box-1'></div>
+                <div class='strength-box' id='strength-box-2'></div>
+                <div class='strength-box' id='strength-box-3'></div>
+                <div class='strength-box' id='strength-box-4'></div>
+            </div>
+            <button id='generate-btn' onclick='generate()'>
+                <h3>GENERATE</h3>
+                <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
