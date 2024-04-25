@@ -16,7 +16,8 @@
         </section>
         <section id='password-section'>
             <h1 id='password'>P4$5W0rD!</h1>
-            <img id='copy-icon' src='images/icon-copy.svg'>
+            <h3 class='copied-text hidden'>COPIED</h3>
+            <img class='copy-icon' src='images/icon-copy.svg' onclick='copyPassword()'>
         </section>
         <section id='options-section'>
             <div id='char-length-section'>
@@ -39,13 +40,13 @@
             </div>
             <div id='strength-section'>
                 <h3>STRENGTH</h3>
-                <h2 id='strength-text'>MEDIUM</h2>
-                <div class='strength-box' id='strength-box-1'></div>
-                <div class='strength-box' id='strength-box-2'></div>
-                <div class='strength-box' id='strength-box-3'></div>
-                <div class='strength-box' id='strength-box-4'></div>
+                <h2 id='strength-text'>STRONG</h2>
+                <div class='strength-box strong' id='strength-box-1'></div>
+                <div class='strength-box strong' id='strength-box-2'></div>
+                <div class='strength-box strong' id='strength-box-3'></div>
+                <div class='strength-box strong' id='strength-box-4'></div>
             </div>
-            <button id='generate-btn' onclick='generate()'>
+            <button id='generate-btn' onclick='generatePassword()'>
                 <h3>GENERATE</h3>
                 <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
             </button>

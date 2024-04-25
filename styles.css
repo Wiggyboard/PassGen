@@ -85,9 +85,22 @@ section {
     color: var(--clr-grey);
 }
 
-#copy-icon {
+.copied-text {
+    margin-left: auto;
+    color: var(--clr-neon-green);
+}
+
+.copied-text.hidden {
+    display: none;
+}
+
+.copy-icon {
     margin-left: auto;
     cursor: pointer;
+}
+
+.copy-icon.alert {
+    margin-left: 2rem;
 }
 
 #options-section {
@@ -211,6 +224,26 @@ label {
 
 #strength-box-1 {
     margin-left: 1.5rem;
+}
+
+.strong {
+    background: var(--clr-neon-green);
+    border: none;
+}
+
+.medium {
+    background: var(--clr-yellow);
+    border: none;
+}
+
+.weak {
+    background: var(--clr-orange);
+    border: none;
+}
+
+.very-weak {
+    background: var(--clr-red);
+    border: none;
 }
 
 #generate-btn {
